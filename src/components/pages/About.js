@@ -2,10 +2,8 @@ import React from 'react';
 
 export default function About() {
   return (
-    // <!-- About me -->
     <div class="about-me" id="about-me">
       <h2>About me</h2>
-      {/* <!-- Profile pic --> */}
       <div class="about-me-bio"><img src="./assets/images/profile.jpg" alt="profile image" />
          <p>Entrepreneur.  Investor.  General trouble maker.<br><br>
 
