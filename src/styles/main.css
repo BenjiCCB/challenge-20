@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #6a8ec2;
+    color: #fff;
+  }
+  
+  .header-main{
+    background-image: url('../images/building.jpg');
+  }
+  
+  .about-me{
+    margin: 40px;
+    margin-top: 65px;
+  }
+  
+  .about-me-bio{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about-me-bio img{
+    padding-right: 30px;
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-me-bio a{
+    padding: 0 7px;
+    font-size: 1.2em;
+  }
+  
+  .roles-intro{
+    margin-left: 40px;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #9c9c9c;
+    justify-content: right;
+  }
+  
+  nav a {
+    color: #f6f6f6;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-grow: 1; */
+  }
+  
+  aside {
+    margin-top: 20;
+    flex: 0 0 25%;
+    /*background-color: #6a8ec2;*/
+    background-image: linear-gradient(to right, #6a8ec2, white);
+    padding: 40px 0px 0px 30px;
+    text-align: left;
+    line-height: 2em;
+  }
+  
+  aside li{
+    font-size: 1.2em;
+  }
+  
+  .bullet-stars{
+    list-style: none;
+    font-size: 200%;
+    margin: 10px;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+    margin-top: auto;
+  }
+  
+  .roles {
+    /* flex: 4; */
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .roles a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  
+  /* Added rotation, box-shadow, border-radius */
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    /* transform: rotate(8deg); */
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+  
+  .card:hover{
+    border: rgb(144, 144, 144);
+    border-style: solid;
+    border-radius: 25px;
+  }
+  
+  /* Added border-radius to match the card */
+  .card header {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  .card img {
+    /* width: 100%; */
+    width: 275px;
+    height: 200px;
+  }
+  
+  
+  /* CONTACT FORM -modified from W3CSchool*/
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .container label {
+    display: block;
+  }
+  
+  .container{
+    width: 100%;
+  }
+  
+  form{
+    width: 100%;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+  /* @media screen and (max-width: 2240px) {
+    .products {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  } */
