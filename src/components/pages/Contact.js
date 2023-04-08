@@ -5,7 +5,7 @@ export default function Contact() {
     <div>
         <h1>Contact Page</h1>
         <div class="container" id="contact-form">
-            {/* <form action="action_page.php">
+            <form action="action_page.php">
         
             <h2>Contact Benji</h2>
 
@@ -21,7 +21,7 @@ export default function Contact() {
         
             <input type="submit" value="Submit">
         
-            </form> */}
+            </form>
          </div>
       </div>
   );
