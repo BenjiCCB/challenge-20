@@ -32,11 +32,13 @@ export default function PortfolioContainer() {
         <p>Entrepreneur. Investor. General trouble maker || CEO, Bridge-X & Principal @ Bridge Capital</p>
       </header>
 
-      <nav>
+    <div class="divider"></div>
+
+      {/* <nav>
         <a href="#about-me">About Me</a>
         <a href="#roles-intro">Roles</a>
         <a href="#contact-form">Contact</a>
-      </nav>
+      </nav> */}
   
 
       {/* // TODO: Add a comment describing what we are passing as props */}

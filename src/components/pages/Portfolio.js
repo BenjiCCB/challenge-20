@@ -4,18 +4,53 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+      
+      {/* <!-- Role Cards --> */}
+        <div class="roles">
+          <section class="card">
+            <header><a href="https://www.wework.com/">WeWork</a></header>
+            <img src={require("../../images/computer.jpg")} alt="wework image" />
+            <p>Global Community Director</p>
+          </section>
+          <section class="card">
+            <header><a href="https://www.mercer.com/">Mercer</a></header>
+            <img src={require("../../images/notepad.jpg")} alt="mercer image" />
+            <p>Price: Entrepreneur in Residence</p>
+          </section>
+          <section class="card">
+            <header><a href="https://www.nbcuniversal.com/">NBCUniversal</a></header>
+            <img
+              src={require("../../images/conference.jpg")}
+              alt="nbcu image"
+            />
+            <p>Digital Strategy</p>
+          </section>
+          <section class="card">
+            <header><a href="https://www.nyu.edu/">NYU</a></header>
+            <img
+              src={require("../../images/desk.jpg")}
+              alt="4 NYU image"
+            />
+            <p>Masters Degree</p>
+          </section>
+          <section class="card">
+            <header><a href="https://www.nyu.edu/">NYU</a></header>
+            <img
+              src={require("../../images/desk.jpg")}
+              alt="4 NYU image"
+            />
+            <p>Masters Degree</p>
+          </section>
+          <section class="card">
+            <header><a href="https://www.nyu.edu/">NYU</a></header>
+            <img
+              src={require("../../images/desk.jpg")}
+              alt="4 NYU image"
+            />
+            <p>Masters Degree</p>
+          </section>
+        </div>
+      
     </div>
   );
 }

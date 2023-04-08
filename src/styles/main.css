@@ -61,6 +61,11 @@
     text-decoration: none;
     text-align: center;
   }
+
+  .divider {
+    height: 35px;
+    background-color: #9c9c9c;
+  }
   
   main {
     display: flex;
