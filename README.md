@@ -1,16 +1,16 @@
-# ReadMe - Module 19 Challenge 📝
+# ReadMe - Module 20 Challenge 📝
 
 ## Description 
 
-This progressive web app is a browser-based text editor, featuring a number of data persistence techniques. Through the app, users can add text, and click off the main window to store the info to the IndexedDB browser databse, which can then be redisplayed across page refreshes.  The app uses webpack to conolidate all files for distribution, confirm backwards-compatibility of javascript, and create a manifest that can be used to download the app so as to run standalone locally.  The app also uses service workers to cache content, to minimize load times and allow for offline interaction
+This application is portfolio site, designed to showcase the author's bio, projects, resume, and contact info.  The site is built using react, to create a seamless, single-page format, further demonstrating the author's skillset and comfort with advanced technologies
 
-View below for more info, as well as the github repo, the heroku link, and a screenshot of the app in action.  
+View below for more info, as well as the Github repo, the Pages link, and a screenshot of the app in action.  
 
-Github: [link here](https://github.com/BenjiCCB/challenge-19)
+Github: [link here](https://github.com/BenjiCCB/challenge-20)
 
-Heroku: [link here](https://ccb19-jate.herokuapp.com)
+Pages deployment: [link here](https://benjiccb.github.io/challenge-20/)
 
-![screenshot](./client/src/images/appshot.png)
+![screenshot](./src/images/appshot.png)
 
 ---
 
@@ -34,19 +34,14 @@ Heroku: [link here](https://ccb19-jate.herokuapp.com)
 
 ## Installation Instructions 
 
-To install, a user must run npm install on the top level package.json, as well as those of the client and server folders.  The user will then need to call npm run build, to compile the dist folder.  To run the app, a user can then call npm run start (for production mode) or npm run start:dev (for development mode).  The app will then run on port 3000
+Instalion of the app is quite straighforward... simply run 'npm install' in the top level directory, then 'npm run start' to begin the server on port 3000.  For the Github Pages version, no instllation is necessary
 
 ---
 
 ## Usage Information 
 
-Once a user's application is running, they can use the main interface to add or remove text.  On clicking off the main window, changes are saved to the browser's IndexedDB database to store across page sessions.  A user can also download the app by hitting the install button, which will create a local version the progressive web app to use offline and otherwise
+This application is extremely simple to use. Once running, simply click to visit each one of the a site's sections, including the About Me, the Portfolio, the Resume, and the Contact section
 
-Notes:
-* The app's ASCII-art main display will show on intital site visit, or after clearing site data from the browser's console
-* The local, downloaded version of the app will stay in sync with the browser version
-* On download, the app will no longer display the install prompt, unless/until the app is uninstalled locally
-* To uninstall the local app, simply click the 3-dot menu in the top right, and select uninstall
 
 ---
 

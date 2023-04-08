@@ -45,6 +45,13 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
+
+      <footer>
+      <h5>
+        Contact Benji: bensdecker@gmail.com
+      </h5>
+    </footer>
+
     </div>
   );
 }
