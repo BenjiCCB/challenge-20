@@ -3,8 +3,8 @@ import React from 'react';
 export default function Contact() {
   return (
     <div>
-        <h1>Contact Page</h1>
-        <div class="container" id="contact-form">
+        <h1 class="title">Contact Page</h1>
+        {/* <div class="container" id="contact-form">
             <form action="action_page.php">
         
             <h2>Contact Benji</h2>
@@ -22,7 +22,7 @@ export default function Contact() {
             <input type="submit" value="Submit">
         
             </form>
-         </div>
+         </div> */}
       </div>
   );
 }

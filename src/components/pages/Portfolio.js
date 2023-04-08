@@ -3,7 +3,7 @@ import React from 'react';
 export default function Portfolio() {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <h1 class="title">Portfolio</h1>
       
       {/* <!-- Role Cards --> */}
         <div class="roles">
