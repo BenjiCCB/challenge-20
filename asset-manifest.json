@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/challenge-20/static/css/main.04ae53b4.css",
+    "main.js": "/challenge-20/static/js/main.00ae6d47.js",
+    "static/media/computer.jpg": "/challenge-20/static/media/computer.7cfb410322ed6c289f34.jpg",
+    "static/media/building.jpg": "/challenge-20/static/media/building.fe17a8b14d038c2f88d1.jpg",
+    "static/media/desk.jpg": "/challenge-20/static/media/desk.dbc1887e35e81b93dcdf.jpg",
+    "static/media/conference.jpg": "/challenge-20/static/media/conference.46b04fbc6b9d2c898d06.jpg",
+    "static/media/notepad.jpg": "/challenge-20/static/media/notepad.2fed3b2505c9857381e9.jpg",
+    "static/media/resume1.png": "/challenge-20/static/media/resume1.848cd39f466e41394d1f.png",
+    "static/media/resume2.png": "/challenge-20/static/media/resume2.388aed6cafd32060ceab.png",
+    "static/media/profile.jpg": "/challenge-20/static/media/profile.cef26028a6caf62c9f96.jpg",
+    "index.html": "/challenge-20/index.html",
+    "main.04ae53b4.css.map": "/challenge-20/static/css/main.04ae53b4.css.map",
+    "main.00ae6d47.js.map": "/challenge-20/static/js/main.00ae6d47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04ae53b4.css",
+    "static/js/main.00ae6d47.js"
+  ]
+}
