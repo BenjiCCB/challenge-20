@@ -17,6 +17,23 @@
   margin-top: 15px;
 }
 
+.social a {
+  margin: 10px;
+}
+
+.git-link {
+  margin-top: 20px !important;
+  font-style: italic;;
+}
+
+.git-link a {
+  color: black !important;
+}
+
+/* .git-link a:hover {
+  color: blue;
+} */
+
 /* ------------ */
 
 * {
@@ -174,6 +191,7 @@
     width: 275px;
     height: 200px;
   }
+  
   
   
   /* CONTACT FORM -modified from W3CSchool*/

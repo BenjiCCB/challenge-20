@@ -50,6 +50,11 @@ export default function PortfolioContainer() {
       <h5>
         Contact Benji: bensdecker@gmail.com
       </h5>
+      <p class="social">
+        <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/benjidecker/">LinkedIn</a>
+        <i class="fa-brands fa-github"></i><a href="https://github.com/BenjiCCB">Github</a>
+        <i class="fa-brands fa-square-instagram"></i><a href="https://www.instagram.com/benji_decker/">Instagram</a>
+      </p>
     </footer>
 
     </div>

@@ -8,7 +8,7 @@ View below for more info, as well as the Github repo, the Pages link, and a scre
 
 Github: [link here](https://github.com/BenjiCCB/challenge-20)
 
-Pages deployment: [link here](https://benjiccb.github.io/challenge-20/)
+Pages deployment: [link here](https://benjiccb.github.io/challenge-20)
 
 ![screenshot](./src/images/appshot.png)
 
