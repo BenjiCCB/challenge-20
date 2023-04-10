@@ -1,5 +1,5 @@
 import React from 'react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {validateEmail} from '../../utils/helpers';
 
 export default function Contact() {
@@ -7,6 +7,7 @@ export default function Contact() {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -35,8 +36,8 @@ export default function Contact() {
     alert(`Hello ${userName}`);
 
     setUserName('');
-    setPassword('');
     setEmail('');
+    setMessage('');
   };
 
   return (
