@@ -1,27 +1,70 @@
 import React from 'react';
+import React, { useState } from 'react';
+import {validateEmail} from '../../utils/helpers';
 
 export default function Contact() {
+  
+  const [userName, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'userName') {
+      setUserName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+  
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage('Email or name is invalid');
+      return;
+    }
+
+    alert(`Hello ${userName}`);
+
+    setUserName('');
+    setPassword('');
+    setEmail('');
+  };
+
   return (
     <div>
         <h1 class="title">Contact Page</h1>
         <div class="container" id="contact-form">
-            <form>
+            <form className = "form">
         
             {/* <h2>Contact Benji</h2> */}
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name..."></input>
+            <label for="userName">Name</label>
+            <input value={userName} onChange={handleInputChange} type="text" id="userName" name="userName" placeholder="Your name..."></input>
         
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..."></input>
+            <label for="email">Email</label>
+            <input value={email} onChange={handleInputChange} type="text" id="email" name="email" placeholder="Your email..."></input>
         
         
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write your message here..."></textarea>
+            <label for="message">Message</label>
+            <textarea value={message} onChange={handleInputChange} id="message" name="message" placeholder="Write your message here..."></textarea>
         
-            <input class="submit-btn" type="submit" value="Submit"></input>
+            {/* <input class="submit-btn" type="submit" value="Submit"></input> */}
+            <button type="button" onClick={handleFormSubmit}>Submit</button>
         
             </form>
+            {errorMessage && (
+              <div><p className="error-text">{errorMessage}</p></div>
+            )}
+
          </div>
       </div>
   );
