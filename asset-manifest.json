@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/challenge-20/static/css/main.c7aa1274.css",
-    "main.js": "/challenge-20/static/js/main.39fdfe97.js",
+    "main.css": "/challenge-20/static/css/main.dacc3d41.css",
+    "main.js": "/challenge-20/static/js/main.a05bd987.js",
     "static/media/building.jpg": "/challenge-20/static/media/building.fe17a8b14d038c2f88d1.jpg",
     "static/media/SAB.png": "/challenge-20/static/media/SAB.42e8f51934151bdfe664.png",
     "static/media/flat.png": "/challenge-20/static/media/flat.f95c358a7541bde42f56.png",
@@ -13,11 +13,11 @@
     "static/media/quiz.png": "/challenge-20/static/media/quiz.b1662e29218347ec4b0b.png",
     "static/media/profile.jpg": "/challenge-20/static/media/profile.cef26028a6caf62c9f96.jpg",
     "index.html": "/challenge-20/index.html",
-    "main.c7aa1274.css.map": "/challenge-20/static/css/main.c7aa1274.css.map",
-    "main.39fdfe97.js.map": "/challenge-20/static/js/main.39fdfe97.js.map"
+    "main.dacc3d41.css.map": "/challenge-20/static/css/main.dacc3d41.css.map",
+    "main.a05bd987.js.map": "/challenge-20/static/js/main.a05bd987.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7aa1274.css",
-    "static/js/main.39fdfe97.js"
+    "static/css/main.dacc3d41.css",
+    "static/js/main.a05bd987.js"
   ]
 }
