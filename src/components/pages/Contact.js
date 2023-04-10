@@ -10,14 +10,17 @@ export default function Contact() {
   const [errorMessage, setErrorMessage] = useState('');
   
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'email') {
       setEmail(inputValue);
+        if (!validateEmail(email)){
+          document.getElementById("email").setAttribute("style", "border: solid red;");
+        } else {
+          document.getElementById("email").setAttribute("style", "border: none;");
+        }
     } else if (inputType === 'userName') {
       setUserName(inputValue);
     } else {
@@ -38,6 +41,7 @@ export default function Contact() {
     setUserName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
@@ -58,8 +62,8 @@ export default function Contact() {
             <label for="message">Message</label>
             <textarea value={message} onChange={handleInputChange} id="message" name="message" placeholder="Write your message here..."></textarea>
         
-            {/* <input class="submit-btn" type="submit" value="Submit"></input> */}
-            <button type="button" onClick={handleFormSubmit}>Submit</button>
+            <input class="submit-btn" type="submit" value="Submit" onClick={handleFormSubmit}></input>
+            {/* <button type="button" onClick={handleFormSubmit}>Submit</button> */}
         
             </form>
             {errorMessage && (
