@@ -10,7 +10,7 @@ Github: [link here](https://github.com/BenjiCCB/challenge-20)
 
 Pages deployment: [link here](https://benjiccb.github.io/challenge-20)
 
-![screenshot](./src/images/appshot.png)
+![screenshot](./src/images/flat.png)
 
 ---
 
@@ -40,7 +40,7 @@ Instalion of the app is quite straighforward... simply run 'npm install' in the 
 
 ## Usage Information 
 
-This application is extremely simple to use. Once running, simply click to visit each one of the a site's sections, including the About Me, the Portfolio, the Resume, and the Contact section
+This application is extremely simple to use. Once running, simply click to visit each one of the a site's sections, including the About Me, the Portfolio, the Resume, and the Contact section (note validation functionaly in Contact the section, and download option in the Resume)
 
 
 ---

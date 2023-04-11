@@ -15,12 +15,7 @@ export default function Contact() {
     const inputValue = target.value;
 
     if (inputType === 'email') {
-      setEmail(inputValue);
-        if (!validateEmail(email)){
-          document.getElementById("email").setAttribute("style", "border: solid red;");
-        } else {
-          document.getElementById("email").setAttribute("style", "border: none;");
-        }
+      setEmail(inputValue);  
     } else if (inputType === 'userName') {
       setUserName(inputValue);
     } else {
@@ -28,6 +23,34 @@ export default function Contact() {
     }
   };
   
+// -----------
+
+const handleOnBlur = (e) => {
+  const { target } = e;
+  const inputType = target.name;
+
+  if (inputType === 'email') {
+      if (!validateEmail(email)){
+        document.getElementById("email").setAttribute("style", "border: solid red;");
+        setErrorMessage("Valid email required")
+      } else {
+        document.getElementById("email").setAttribute("style", "border: none;");
+        setErrorMessage("")
+      }
+  } else if (inputType === 'userName') {
+      if (!userName){
+        document.getElementById("userName").setAttribute("style", "border: solid red;");
+        setErrorMessage("Name field required")
+      } else{
+        document.getElementById("userName").setAttribute("style", "border: none;");
+        setErrorMessage("")
+      }
+  } else {
+  }
+};
+
+// -----------
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -53,11 +76,10 @@ export default function Contact() {
             {/* <h2>Contact Benji</h2> */}
 
             <label for="userName">Name</label>
-            <input value={userName} onChange={handleInputChange} type="text" id="userName" name="userName" placeholder="Your name..."></input>
+            <input value={userName} onBlur={handleOnBlur} onChange={handleInputChange} type="text" id="userName" name="userName" placeholder="Your name..."></input>
         
             <label for="email">Email</label>
-            <input value={email} onChange={handleInputChange} type="text" id="email" name="email" placeholder="Your email..."></input>
-        
+            <input value={email} onBlur={handleOnBlur} onChange={handleInputChange} type="text" id="email" name="email" placeholder="Your email..."></input>
         
             <label for="message">Message</label>
             <textarea value={message} onChange={handleInputChange} id="message" name="message" placeholder="Write your message here..."></textarea>
